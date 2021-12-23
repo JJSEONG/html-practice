@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>하트 애니메이션</title>
+        <style>
+            .bg {
+                position: fixed;
+                top:0;
+                left:0;
+                width: 100%;
+                height:100%;
+                background-color: #fff;
+                /* animation: back 2s infinite; */
+                animation: back;
+                animation-duration: 1s;
+                animation-iteration-count: infinite;
+            }
+            .heart {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -25px;
+                margin-left: -25px;
+                width: 50px;
+                height: 50px;
+                background-color: pink;
+                transform: rotate(45deg);
+                animation: beat 1s infinite;
+            }
+            .heart::before {
+                content: "";
+                position: absolute;
+                top: -25px;
+                left: 0;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: pink;
+            }
+            .heart::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -25px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: pink;
+            }
+            /*
+            애니메이션
+            .bg
+            > 0%, 100% 일때, 배경색 흰색
+            > 50% 일때, 배경색 #F8E0F1
+            
+            .heart
+            > 0%, 100% 일때, 원래크기
+            > 50% 일때, 반으로 축소
+            */
+
+            @keyframes back {
+                /* 0%,100% {background-color: #fff;} */
+                50% {background-color: #F8E0F1;}
+                /* 100% {background-color: #fff;} */
+            }
+            @keyframes beat {
+                0%,100% {transform: scale(1) rotate(45deg);}
+                50% {transform: scale(0.5) rotate(45deg);}
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <div class="heart"></div>
+    </body>
+</html>
