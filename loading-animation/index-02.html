@@ -39,6 +39,7 @@
                 border-top-color : #fff000;
                 border-right-color : #fff000;
                 border-radius: 50%;
+                animation: bar 2s infinite linear;
             }
             .ring span {
                 position: absolute;
@@ -60,6 +61,15 @@
                 height: 16px;
                 border-radius: 50%;
                 background-color: #fff000;
+            }
+
+            @keyframes dot {
+                0% {transform: rotate(45deg);}
+                100% {transform: rotate(405deg);}
+            }
+            @keyframes bar {
+                0% {transform: rotate(0);}
+                100% {transform: rotate(360deg);}
             }
         </style> 
     </head>
