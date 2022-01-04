@@ -114,3 +114,22 @@ section:nth-of-type(2n+1)/*odd 사용 가능*/ {
     font-family: 'Nanum Myeongjo', serif;
     padding-bottom: 20px;
 }
+
+/* 교육프로그램 */
+.pro {
+    float: left;
+    width: calc(25% - 20px);
+    margin: 0 10px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    min-height: 350px;
+}
+@media screen and (max-width:767px) {
+    .pro {
+        float: none;
+        width: 100%;
+        min-height: auto;
+        margin: 10px 0;
+    }
+}
