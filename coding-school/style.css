@@ -133,3 +133,35 @@ section:nth-of-type(2n+1)/*odd 사용 가능*/ {
         margin: 10px 0;
     }
 }
+
+/* 푸터 */
+footer {
+    background-color: darkslateblue;
+    color: #fff;
+    padding: 50px;
+}
+footer .address {
+    float: left;
+}
+footer ul {
+    float: right;
+}
+footer ul li {
+    float: left;
+    margin-left: 10px;
+}
+@media screen and (max-width:767px) {
+    footer {
+        padding: 50px 20px;
+    }
+    footer .address, footer ul {
+        float: none;
+    }
+    footer .address {
+        margin-bottom: 30px;
+    }
+    footer ul li {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+}
