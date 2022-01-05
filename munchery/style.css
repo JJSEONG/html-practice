@@ -1,0 +1,81 @@
+/* 초기화 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* 헤더 */
+nav {
+    width: 100%;
+    margin: 0 auto;
+}
+nav ul {
+    width: 717px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+nav ul li {
+    float: left;
+    margin: 0 20px;
+    line-height: 120px;
+}
+
+/* 본문 */
+main {
+    width: 1240px;
+    margin: 0 auto;
+    position: relative;
+}
+main img {
+    width: 1240px;
+}
+.box-wrap {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    position: absolute;
+    left: 620px;
+    top: 151px;
+    margin-left: -200px;
+    margin-top: -125px;
+    background-color: #aaa;
+}
+.text-box {
+    text-align: center;
+    margin-top: 20px;
+}
+.box2 p {
+    text-align: center;
+}
+.box2 .box-text {
+    width: 100%;
+    margin: 0 auto;
+}
+.select-box {
+    width: 260px;
+    margin: 0 auto;
+}
+.select-box div {
+    width: 120px;
+    height: 40px;
+    float: left;
+    margin: 0 5px;
+    line-height: 40px;
+    text-align: center;
+}
+.select-box div:nth-of-type(1) {
+    background-color: #fff;
+}
+.select-box div:nth-of-type(2) {
+    background-color: orange;
+    color: #fff;
+}
