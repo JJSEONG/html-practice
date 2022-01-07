@@ -21,6 +21,7 @@ body {
 /* 헤더 */
 header {
     max-width: 1200px;
+    height: 90px;
     margin: 0 auto;
     background-color: #555;
     overflow: hidden;
@@ -49,4 +50,21 @@ form select {
     width: 100px;
     height: 30px;
     margin: 30px 30px 0;
+}
+@media screen and (max-width:1199px) {
+    header div {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    header img {
+        margin: 0;
+        margin-top: 15px;
+    }
+    header nav {
+        display: none;
+    }
+    header form {
+        display: none;
+    }
 }
