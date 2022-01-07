@@ -11,3 +11,42 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* 공통적용 */
+body {
+    font-family: '맑은고딕', sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+}
+/* 헤더 */
+header {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #555;
+    overflow: hidden;
+}
+header div {
+    float: left;
+}
+header img {
+    width: 120px;
+    margin: 15px 30px 0 100px;
+}
+nav ul {
+    float: left;
+    max-width: 726px;
+    margin: 0 auto;
+}
+nav ul li {
+    float: left;
+    margin: 0 30px;
+    line-height: 90px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+form select {
+    width: 100px;
+    height: 30px;
+    margin: 30px 30px 0;
+}
