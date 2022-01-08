@@ -19,17 +19,17 @@ body {
     line-height: 26px;
 }
 /* 헤더 */
-header {
+.header {
     max-width: 1200px;
     height: 90px;
     margin: 0 auto;
     background-color: #555;
     overflow: hidden;
 }
-header div {
+.header div {
     float: left;
 }
-header img {
+.header img {
     width: 120px;
     margin: 15px 30px 0 100px;
 }
@@ -52,19 +52,22 @@ form select {
     margin: 30px 30px 0;
 }
 @media screen and (max-width:1199px) {
-    header div {
+    .header div {
         float: none;
         width: 100%;
         text-align: center;
     }
-    header img {
+    .header img {
         margin: 0;
         margin-top: 15px;
     }
-    header nav {
+    .header nav {
         display: none;
     }
-    header form {
+    .header form {
         display: none;
     }
+}
+main img {
+    width: 1200px;
 }
