@@ -11,6 +11,9 @@ a {
     text-decoration: none;
     color: inherit;
 }
+img {
+    vertical-align: top;
+}
 
 /* 공통적용 */
 body {
@@ -72,13 +75,28 @@ form select {
     }
 }
 /* 본문 */
+.section-wrap {
+    position: absolute;
+}
 main img {
     width: 1200px;
 }
+.text-box {
+    position: relative;
+    text-align: center;
+    bottom: 60px;
+    z-index: 1;
+}
 .text-box img {
     width: 300px;
+    margin: 80px 0;
 }
-.section-nav li a {
+.section-nav {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.section-nav li {
     width: 160px;
     height: 140px;
     background-color: skyblue;
