@@ -1,76 +1,47 @@
-/* 초기화 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-ul {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
-img {
-    vertical-align: top;
-}
+*{padding: 0; margin: 0; font-family: 'Noto Sans KR', sans-serif;}
+li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+img{display: block; max-width: 100%;}
+body{font-size: 14px; color: #333;}
 
-/* 공통적용 */
-body {
-    font-family: '맑은고딕', sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-}
-/* 헤더 */
-header {
-    max-width: 100%;
+
+header{
+    width: 100%;
     height: 90px;
-    position: relative;
     overflow: hidden;
-    background-color: #1e172a;
+    background-color: #d7e0fa;
 }
-#top {
+nav{
     width: 1200px;
-    height: 90px;
-    margin: 0 auto;
-    position: relative;
+    margin: auto;
+}
+nav>a{
+    width: 120px;
+    height: 60px;
+    display: block; /*반응형 형상에서 어떻게 바뀔지 모르기 때문에 block 초기화(초기화로 박스처리)*/
+    float: left;
+    margin: 15px 0px;
+}
+nav ul{
+    width: 980px;
+    /*폭계산:1200-120(logo)=1080-100(select박스)=980*/
+
+    float: left;
     overflow: hidden;
     text-align: center;
 }
-#top>.logo {
-    width: 120px;
-    height: 60px;
-    display: block;
-    float: left;
-    margin-top: 15px;
-    background-image: url(img/logo_1200.png);
-    background-size: 100%;
-    font-size: 0;
-}
-#top>ul {
+nav li{
     display: inline-block;
-    overflow: hidden;
-    margin-top: 30px;
-}
-#top>ul>li {
-    float: left;
-    line-height: 30px;
-    font-size: 20px;
-}
-#top>ul>li>a {
-    color: #d4d0dc;
+    line-height: 90px; /*100px표기되어있음*/
+    padding: 0px 30px;
+    font-size: 15px;
     font-weight: 600;
-    display: block;
-    padding-left: 30px;
-    padding-right: 30px;
 }
-#top select {
+nav select{
     float: right;
-    display: block;
+    width: 100px;
     height: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 
 #main {
