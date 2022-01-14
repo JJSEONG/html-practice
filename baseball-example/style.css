@@ -4,7 +4,7 @@ a{text-decoration: none; color: inherit;}
 img{display: block; max-width: 100%;}
 body{font-size: 14px; color: #333;}
 
-
+/* 헤더 */
 header{
     width: 100%;
     height: 90px;
@@ -44,6 +44,7 @@ nav select{
     margin: 30px 0;
 }
 
+/* 본문 */
 #main {
     width: 100%;
     overflow: hidden;
@@ -87,4 +88,47 @@ nav select{
     line-height: 30px;
     left: 0;
     bottom: 30px;
+}
+
+/* 섹션 */
+section{
+    width: 1140px; /*360+20=380*3=1140*/
+    overflow: hidden;
+    margin: 40px auto;
+}
+.bnbox{
+    width: 360px;
+    margin: 0px 10px;
+    height: 260px;
+    float: left;
+    margin-bottom: 20px;
+}
+.bar{
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.bar h2{
+    float: left;
+}
+.bar img{
+    float: right;
+    margin: 7.5px; /*15/2*/
+}
+.bnbox:nth-child(2)>.bar,
+.bnbox:nth-child(6)>.bar{
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+.bnbox ul{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.bnbox li{
+    line-height: 30px;
+}
+.bnbox span{
+    float: right;
+    font-size: 12px;
+    color: #ccc;
 }
