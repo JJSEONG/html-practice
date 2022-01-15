@@ -9,7 +9,7 @@ header{
     width: 100%;
     height: 90px;
     overflow: hidden;
-    background-color: #d7e0fa;
+    background-color: #555;
 }
 nav{
     width: 1200px;
@@ -34,6 +34,7 @@ nav li{
     display: inline-block;
     line-height: 90px; /*100px표기되어있음*/
     padding: 0px 30px;
+    color: #fff;
     font-size: 15px;
     font-weight: 600;
 }
@@ -137,7 +138,7 @@ section{
 footer{
     width: 100%;
     height: 90px;
-    background-color: #333;
+    background-color: #555;
     overflow: hidden;
 }
 .inner{
@@ -175,4 +176,47 @@ footer{
     background-color: #333;
     color: #fff;
     border: 1px solid #fff;
+}
+
+/* 반응형 */
+@media screen and (max-width:960px) {
+   
+    nav{width: 100%;}
+    nav ul{display: none;}
+    nav select{display: none;}
+    nav>a{
+        float: none; /*나열제거*/
+        margin: 15px auto;
+    }
+    .contents{
+        /*960/1900=0.5051(51%)*/
+        width: 51%; /*가변그리드를 적용한 계산 부여도 가능*/
+    }
+    .contents>a{
+        width: 33.3%; /*100/3*/
+    }
+    section{
+        width: 80%;
+    }
+    .bnbox{
+        width: 48%;
+        margin: 0 1%;
+    }
+    .bnbox li{
+        line-height: 25px;
+        font-size: 13px;
+    }
+    .inner{
+        width: 100%;
+    }
+    .inner>a{
+        display: none;
+    }
+    .icon{
+        display: none;
+    }
+    .copy{
+        float: none;
+        text-align: center;
+    }
 }
