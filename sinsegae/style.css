@@ -12,10 +12,37 @@ a {
 }
 nav {
     width: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 nav .btn-menu {
+    width: 910px;
+    margin: 0 auto;
     overflow: hidden;
 }
 nav .btn-menu li {
     float: left;
+    width: 90px;
+    margin: 0 20px;
+    text-align: center;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+}
+nav div {
+    position: absolute;
+}
+nav .left-logo {
+    top: 14px;
+    left: 100px;
+}
+nav .right-logo {
+    top: 22px;
+    right: 100px;
+}
+nav .right-logo img {
+    margin: 0 10px;
+}
+nav hr {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
