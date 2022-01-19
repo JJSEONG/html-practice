@@ -51,6 +51,9 @@ nav hr {
 }
 
 /* 본문 */
+main {
+    width: 100%;
+}
 main .left-section {
     position: fixed;
     width: 21%;
@@ -77,4 +80,14 @@ main .left-section div h2 {
 main .left-section div p {
     font-size: 12px;
     text-decoration: underline;
+}
+main .right-section {
+    width: 79%;
+    height: 100%;
+    position: relative;
+}
+main .right-section img {
+    position: absolute;
+    top: 50px;
+    right: 30px;
 }
