@@ -84,10 +84,12 @@ main .left-section div p {
 main .right-section {
     width: 79%;
     height: 100%;
+    margin-left: 21%;
     position: relative;
 }
 main .right-section img {
     position: absolute;
     top: 50px;
-    right: 30px;
+    right: 50px;
+    width: 400px;
 }
