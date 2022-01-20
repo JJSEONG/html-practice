@@ -54,42 +54,62 @@ nav hr {
 main {
     width: 100%;
 }
-main .left-section {
+.left-section {
     position: fixed;
     width: 21%;
     height: 100%;
     border-right: 1px solid gray;
 }
-main .left-section div {
+.left-section div {
     width: 80%;
     margin: 0 auto;
 }
-main .left-section div video {
+.left-section div video {
     width: 100%;
     margin: 60px auto;
     text-align: center;
 }
-main .left-section div h2,p {
+.left-section div h2, .left-section div p {
     text-align: center;
 }
-main .left-section div h2 {
+.left-section div h2 {
     color: olivedrab;
     margin-bottom: 20px;
     font-size: 30px;
 }
-main .left-section div p {
+.left-section div p {
     font-size: 12px;
     text-decoration: underline;
 }
-main .right-section {
+.right-section {
     width: 79%;
     height: 100%;
     margin-left: 21%;
     position: relative;
 }
-main .right-section img {
+.right-section div {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    z-index: 9;
+}
+.right-section div h2 {
+    font-size: 12em;
+    color: darkslategray;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline 2px;
+    text-underline-position: under;
+}
+.right-section div p {
+    color: gray;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+.right-section img {
     position: absolute;
     top: 50px;
     right: 50px;
-    width: 400px;
 }
+
