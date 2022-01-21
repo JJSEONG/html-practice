@@ -87,13 +87,17 @@ main {
     margin-left: 21%;
     position: relative;
 }
-.right-section div {
+.right-section div:first-child {
+    width: 90%;
+    height: 100%;
+}
+.right-section .text-wrap {
     position: absolute;
     top: 150px;
     left: 50px;
     z-index: 9;
 }
-.right-section div h2 {
+.right-section .text-wrap h2 {
     font-size: 12em;
     color: darkslategray;
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -102,7 +106,7 @@ main {
     text-decoration: underline 2px;
     text-underline-position: under;
 }
-.right-section div p {
+.right-section .text-wrap p {
     color: gray;
     margin-top: 60px;
     margin-left: 30px;
