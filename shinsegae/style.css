@@ -127,4 +127,8 @@ main {
 .main-section .first-imgline {
     width: 30%;
 }
-
+.first-imgline, .second-imgline {
+    float: left;
+    width: 30%;
+    margin: 0 auto;
+}
