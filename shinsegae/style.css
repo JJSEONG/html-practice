@@ -87,7 +87,7 @@ main {
     margin-left: 21%;
     position: relative;
 }
-.right-section div:first-child {
+.right-section .logo-section {
     width: 90%;
     height: 708px;
 }
@@ -116,7 +116,7 @@ main {
     top: 50px;
     right: 50px;
 }
-.right-section div:nth-child(2) {
+.right-section div:nth-of-type(2) h2 {
     text-align: center;
     margin: 50px auto;
 }
