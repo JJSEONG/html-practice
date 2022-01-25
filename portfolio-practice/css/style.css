@@ -64,8 +64,45 @@ ul {
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    top: calc(50% - 140px);
+    top: calc(50% - 200px);
 }
-#introduce-wrap h2 {
+#introduce-wrap .mainName {
+    position: relative;
+    display: inline-block;
+    font-size: 100px;
+    margin-bottom: 54px;
+    white-space: none;
+    width: 735px;
+    height: 100px;
+    overflow: hidden;
+    font-family: 'Black Han Sans', sans-serif;
+    animation: typing 3s linear forwards;
+}
+#introduce-wrap .mainName::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 740px;
+    height: 70px;
+    margin-top: 20px;
+    border-right: 2px solid yellow;
+    animation: cursor 1s infinite;
+}
+.space {
+    margin: 0 12px;
+}
+#introduce-wrap h3 {
     font-size: 60px;
+}
+
+@keyframes typing {
+    0% {width: 0%; color: pink;}
+    100% {width: 740px; color: lemonchiffon;}
+}
+@keyframes cursor {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
 }
