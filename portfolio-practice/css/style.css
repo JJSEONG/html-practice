@@ -3,8 +3,10 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #282828;
     color: #fff;
+}
+body {
+    background-color: #282828;
 }
 a {
     text-decoration: none;
@@ -17,11 +19,13 @@ ul {
 .header {
     width: 100%;
     height: 100px;
+    background-color: #282828;
     border-bottom: 1px solid #fff;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    z-index: 9999;
 }
 #logo {
     width: 100px;
@@ -46,12 +50,12 @@ ul {
 }
 #header-wrap nav ul {
     float: right;
-    margin-right: 50px;
+    margin-right: 80px;
 }
-#header-wrap nav ul li {
+.menu-btn {
     float: left;
     font-family: 'Do Hyeon', sans-serif;
-    width: 150px;
+    margin: 0 20px;
     height: 100px;
     line-height: 100px;
     text-align: center;
@@ -60,12 +64,15 @@ ul {
 
 /* Main */
 
+/* First-section */
 .main {
-    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
 }
 .introduce {
-    margin: 200px auto;
+    max-width: 1400px;
+    height: 800px;
+    margin: 250px auto 0;
 }
 #introduce-wrap {
     padding-left: 50px;
@@ -79,7 +86,7 @@ ul {
     overflow: hidden;
     font-family: 'Black Han Sans', sans-serif;
     text-shadow: 7px 7px #000;
-    animation: typing 3s linear forwards;
+    animation: typing 2s linear forwards;
 }
 #introduce-wrap .mainName::after {
     content: "";
@@ -104,12 +111,15 @@ ul {
     opacity: 0;
 }
 .first-line {
-    animation: text-slide 1s linear forwards 3s;
+    animation: text-slide 1s linear forwards 2s;
 }
 .second-line {
-    animation: text-slide 1s linear forwards 4s;
+    animation: text-slide 1s linear forwards 3s;
 }
 .third-line {
+    animation: text-slide 1s linear forwards 4s;
+}
+.fourth-line {
     animation: text-slide 1s linear forwards 5s;
 }
 .important {
@@ -121,6 +131,32 @@ ul {
     transition: 1s;
     cursor: pointer;
 }
+#btn-wrap {
+    width: 480px;
+    margin: 50px auto;
+    box-sizing: border-box;
+}
+#btn-wrap button {
+    width: 200px;
+    height: 60px;
+    text-align: 60px;
+    margin: 0 20px;
+    background-color: #282828;
+    border: 3px solid lemonchiffon;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: 'Dongle', sans-serif;
+}
+
+/* //First-section */
+
+/* About Me */
+.about-me {
+    height: 1000px;
+    border-top: #fff;
+    background: #fff;
+}
+/* //About Me */
 
 @keyframes typing {
     0% {width: 0%; color: greenyellow;}
@@ -141,15 +177,9 @@ ul {
 }
 
 @media screen and (max-width: 1024px) {
-    #header-wrap nav ul li {
-        width: 140px;
-    }
-    .introduce {
-        position: none;
-    }
     #introduce-wrap {
-        max-width: 800px;
         margin: 0 auto;
+        padding-left: 0;
     }
     #introduce-wrap .mainName {
         text-align: center;
