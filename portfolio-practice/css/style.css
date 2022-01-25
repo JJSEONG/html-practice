@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&family=Dongle:wght@700&display=swap');
 /* 초기화 */
 * {
     margin: 0;
@@ -36,10 +36,12 @@ ul {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    border: 3px solid yellow;
-    color: yellow;
+    border: 3px solid lemonchiffon;
+    color: lemonchiffon;
     border-radius: 50%;
     text-align: center;
+    text-shadow: 3px 3px black;
+    box-shadow: 3px 3px black;
     font-family: 'Do Hyeon', sans-serif;
 }
 #header-wrap nav ul {
@@ -76,6 +78,7 @@ ul {
     height: 100px;
     overflow: hidden;
     font-family: 'Black Han Sans', sans-serif;
+    text-shadow: 7px 7px #000;
     animation: typing 3s linear forwards;
 }
 #introduce-wrap .mainName::after {
@@ -95,14 +98,43 @@ ul {
 }
 #introduce-wrap h3 {
     font-size: 60px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-weight: 500;
+    text-shadow: 3px 3px black;
+    opacity: 0;
+}
+.first-line {
+    animation: text-slide 1s linear forwards 3s;
+}
+.second-line {
+    animation: text-slide 1s linear forwards 4s;
+}
+.third-line {
+    animation: text-slide 1s linear forwards 5s;
+}
+.important-text {
+    border: 3px solid #fff;
+    padding: 5px;
+    background-color: black;
+    box-sizing: none;
+    color: rgba(0,0,0,0);
+    cursor: pointer;
 }
 
 @keyframes typing {
-    0% {width: 0%; color: pink;}
+    0% {width: 0%; color: greenyellow;}
     100% {width: 740px; color: lemonchiffon;}
+}
+@keyframes typing2 {
+    0% {margin-left: -100px; color: yellow;}
+    100% {margin-left: 0; color: lemonchiffon; opacity: 1;}
 }
 @keyframes cursor {
     0% {opacity: 0;}
     50% {opacity: 1;}
     100% {opacity: 0;}
+}
+@keyframes text-slide {
+    0% {margin-left: -300px; opacity: 0;}
+    100% {margin-left: 0; opacity: 1;}
 }
