@@ -57,23 +57,23 @@ ul {
     text-align: center;
     font-size: 22px;
 }
+
 /* Main */
+
 .main {
     max-width: 1400px;
     margin: 0 auto;
 }
 .introduce {
-    width: 100%;
-    margin: 0 auto;
-    position: absolute;
-    top: calc(50% - 200px);
+    margin: 200px auto;
+}
+#introduce-wrap {
+    padding-left: 50px;
 }
 #introduce-wrap .mainName {
     position: relative;
-    display: inline-block;
     font-size: 100px;
     margin-bottom: 54px;
-    white-space: none;
     width: 735px;
     height: 100px;
     overflow: hidden;
@@ -84,7 +84,6 @@ ul {
 #introduce-wrap .mainName::after {
     content: "";
     position: absolute;
-    display: inline-block;
     top: 0;
     right: 0;
     width: 740px;
@@ -97,10 +96,11 @@ ul {
     margin: 0 12px;
 }
 #introduce-wrap h3 {
-    font-size: 60px;
+    font-size: 48px;
     font-family: 'Do Hyeon', sans-serif;
     font-weight: 500;
     text-shadow: 3px 3px black;
+    line-height: 1.8;
     opacity: 0;
 }
 .first-line {
@@ -112,12 +112,13 @@ ul {
 .third-line {
     animation: text-slide 1s linear forwards 5s;
 }
-.important-text {
+.important {
     border: 3px solid #fff;
     padding: 5px;
     background-color: black;
     box-sizing: none;
-    color: rgba(0,0,0,0);
+    color: rgba(0, 0, 0, 0);
+    transition: 1s;
     cursor: pointer;
 }
 
@@ -137,4 +138,25 @@ ul {
 @keyframes text-slide {
     0% {margin-left: -300px; opacity: 0;}
     100% {margin-left: 0; opacity: 1;}
+}
+
+@media screen and (max-width: 1024px) {
+    #header-wrap nav ul li {
+        width: 140px;
+    }
+    .introduce {
+        position: none;
+    }
+    #introduce-wrap {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    #introduce-wrap .mainName {
+        text-align: center;
+        margin: 0 auto 54px;
+    }
+    #introduce-wrap h3 {
+        font-size: 36px;
+        text-align: center;
+    }
 }
