@@ -86,7 +86,7 @@ ul {
     overflow: hidden;
     font-family: 'Black Han Sans', sans-serif;
     text-shadow: 7px 7px #000;
-    animation: typing 2s linear forwards;
+    animation: typing 1.5s linear forwards;
 }
 #introduce-wrap .mainName::after {
     content: "";
@@ -111,16 +111,16 @@ ul {
     opacity: 0;
 }
 .first-line {
-    animation: text-slide 1s linear forwards 2s;
+    animation: text-slide 0.5s linear forwards 1.5s;
 }
 .second-line {
-    animation: text-slide 1s linear forwards 3s;
+    animation: text-slide 0.5s linear forwards 2s;
 }
 .third-line {
-    animation: text-slide 1s linear forwards 4s;
+    animation: text-slide 0.5s linear forwards 2.5s;
 }
 .fourth-line {
-    animation: text-slide 1s linear forwards 5s;
+    animation: text-slide 0.5s linear forwards 3s;
 }
 .important {
     border: 3px solid #fff;
@@ -148,7 +148,7 @@ ul {
     font-size: 40px;
     font-family: 'Dongle', sans-serif;
     opacity: 0;
-    animation: btn-slide 0.5s linear forwards 6s;
+    animation: btn-slide 0.5s linear forwards 3.5s;
 }
 #btn-wrap button:hover {
     background-color: lemonchiffon;
