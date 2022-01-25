@@ -7,5 +7,15 @@ $(function(){
     }).mouseout(function(){
         $(this).css({color:'#fff', textDecoration:'none'});
     });
+    $('#yesbtn').mouseover(function(){
+        $('#yesbtn span').text("Good Choice!");
+    }).mouseout(function(){
+        $('#yesbtn span').text("Y E S");
+    });
+    $('#nobtn').mouseover(function(){
+        $('#nobtn span').text("Really?");
+    }).mouseout(function(){
+        $('#nobtn span').text("N O");
+    });
     //------------------------
 });
