@@ -1,5 +1,5 @@
 $(function(){
-    const menu = $('.menu-wrap').offset();
+    const menu = $('.menu').offset();
 
     $(window).scroll(function(){
         if ($(window).scrollTop() > menu.top) {
