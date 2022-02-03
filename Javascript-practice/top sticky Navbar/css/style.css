@@ -16,10 +16,16 @@ a {
     vertical-align: top;
 }
 .menu {
-    width: 1000px;
+    width: 100%;
     height: 70px;
     margin: 0 auto;
     overflow: hidden;
+}
+.menu-wrap {
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    background-color: #fff;
 }
 #logo {
     display: inline-block;

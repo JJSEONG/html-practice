@@ -1,11 +1,11 @@
 $(function(){
-    const menu = $('.menu').offset();
+    const menu = $('.menu-wrap').offset();
 
     $(window).scroll(function(){
         if ($(window).scrollTop() > menu.top) {
             $('.menu').addClass('fixed');
         } else {
-            $('menu').removeClass('fixed');
+            $('.menu').removeClass('fixed');
         }
     })
 });
