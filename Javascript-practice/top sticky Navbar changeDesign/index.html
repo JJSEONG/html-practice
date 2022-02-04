@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디자인이 바뀌는 고정헤더</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script>
+        $(function(){
+           const $win = $(window);
+           const $header = $('.header');
+           const $headerClone = $header.contents().clone();
+           const $headerCloneCon = $('<div class="header_clone"></div>');
+           const headerTop = $header.offset().top + $header.outerHeight();
+
+           $('body').append($headerCloneCon);
+           $headerCloneCon.append($headerClone);
+
+           $win.scroll(function(){
+               if($win.scrollTop() > headerTop) {
+                   $headerCloneCon.addClass('sticky');
+               } else {
+                $headerCloneCon.removeClass('sticky');
+               }
+           });
+        //----------------------------
+        });
+    </script>
+</head>
+<body>
+    <!-- 상단배너 -->
+    <div class="banner">
+        <img src="./img/banner.jpg" alt="">
+    </div>
+    <!-- //상단배너 -->
+
+    <!-- 헤더 -->
+    <header class="header">
+        <div class="inner">
+            <h1><a href="#"><img src="./img/logo.png" alt=""></a></h1>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">금융서비스</a></li>
+                    <li><a href="#">관심정보</a></li>
+                    <li><a href="#">교육/세미나</a></li>
+                    <li><a href="#">여행/쇼핑</a></li>
+                    <li><a href="#">일자리정보</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //헤더 -->
+
+    <!-- 본문 -->
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, voluptas repellendus in, sint fuga ullam quas porro sequi provident saepe quis odio voluptatibus, pariatur voluptate! Consectetur expedita a sed veniam?</p>
+        </section>
+    </main>
+    <!-- //본문 -->
+</body>
+</html>
