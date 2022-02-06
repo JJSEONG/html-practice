@@ -95,5 +95,9 @@ header .sub-menu .search .material-icons {
     right: 5px;
     margin: auto;
     cursor: pointer;
+    transition: .4s;
+}
+header .sub-menu .search.focused .material-icons {
+    opacity: 0;
 }
 /* //HEADER */
