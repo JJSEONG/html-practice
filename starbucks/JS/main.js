@@ -69,6 +69,17 @@ new Swiper('.promotion .swiper-container', {
     nextEl: '.promotion .swiper-next'
   }
 });
+new Swiper('.awards .swiper-container', {
+  // direction: 'horizontal' 은 기본값이므로 생략가능
+  autoplay: true,
+  loop: true,
+  spaceBetween: 30,
+  slidesPerView: 5,
+  navigation: {
+    prevEl: '.awards .swiper-prev',
+    nextEl: '.awards .swiper-next'
+  }
+});
 
 const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
@@ -115,3 +126,6 @@ spyEls.forEach(function(spyEl) {
     .setClassToggle(spyEl, 'show')
     .addTo(new ScrollMagic.Controller());
 });
+
+const thisYear = document.querySelector('.this-year');
+thisYear.textContent = new Date().getFullYear(); // 현재년도 반환
