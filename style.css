@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* 초기화 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img,iframe {
+    vertical-align: top;
+}
+body {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+}
+
+/* Top */
+
+header h1 {
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    margin: 30px auto;
+}
+header ul {
+    width: 850px;
+    margin: 20px auto;
+    text-align: center;
+    overflow: hidden;
+}
+header li {
+    width: 130px;
+    margin: 0 20px;
+    float: left;
+}
+
+/* Main */
+
+main {
+    width: 1600px;
+    margin: 0 auto;
+}
+section {
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+/* 섹션01 */
+
+.section01 .left {
+    width: 1274px;
+    float: left;
+}
+.section01 .right {
+    width: 316px;
+    float: right;
+}
+.banner {
+    width: 316px;
+    height: 160px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.banner p:nth-child(1) {
+    line-height: 40px;
+    background-color: purple;
+    margin-top: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -0.5px;
+}
+.banner p:nth-child(2) {
+    line-height: 90px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: -0.7px;
+    cursor: pointer;
+}
+
+/* 섹션02 */
+
+.section02 .left {
+    float: left;
+    width: 784px;
+}
+.section02 .right {
+    float: right;
+}
+
+/* 섹션04 */
+
+.section04 .left {
+    width: 785px;
+    float: left;
+}
+.section04 .right {
+    width: 805px;
+    float: right;
+}
+.email-wrap {
+    width: 805px;
+    height: 215px;
+    background-color: lightgray;
+}
+.email-banner {
+    text-align: center;
+    padding-top: 82px;
+}
+.email-banner input[type="email"] {
+    width: 380px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #000;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.email-banner input[type="submit"] {
+    width: 80px;
+    height: 50px;
+    border: 0;
+    background-color: #222;
+    font-size: 16px;
+    color: #fff;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+.email-banner label {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 10px;
+}
